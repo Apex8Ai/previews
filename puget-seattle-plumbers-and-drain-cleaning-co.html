@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puget Seattle Plumbers and Drain Cleaning Co. | Licensed Master Plumber — Seattle</title>
+<meta name="description" content="Puget Seattle Plumbers and Drain Cleaning Co. — Licensed Master Plumber serving in Seattle. Leaks, clogs, water heaters, full repiping — Puget Seattle Plumbers and Drain Cleaning Co. fixes it right and fixes it fast in Sea">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;color:#1a1a2e;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+.topbar{background:#0A3D62;color:rgba(255,255,255,0.8);font-size:0.8em;padding:9px 0;}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.topbar a{color:rgba(255,255,255,0.9);}
+.nav{background:#fff;border-bottom:1px solid #e8e8e8;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.06);}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;}
+.logo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.2em;color:#0A3D62;letter-spacing:-0.5px;display:flex;align-items:center;gap:8px;}
+.logo-dot{width:10px;height:10px;background:#0097A7;border-radius:50%;flex-shrink:0;}
+.nav-links{display:flex;gap:32px;list-style:none;font-size:0.9em;font-weight:500;color:#444;}
+.nav-links a:hover{color:#0A3D62;}
+.nav-btn{background:#0097A7;color:#fff;font-weight:700;font-size:0.88em;padding:11px 24px;border-radius:7px;transition:background .2s;white-space:nowrap;}
+.nav-btn:hover{background:#00838F;}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80&fit=crop');background-size:cover;background-position:center;}
+.hero-overlay{position:absolute;inset:0;background:rgba(5,25,50,0.75);}
+.hero-content{position:relative;z-index:2;padding:80px 0;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.9);font-size:0.78em;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:7px 16px;border-radius:40px;margin-bottom:24px;}
+.hero-eyebrow::before{content:'';width:6px;height:6px;background:#0097A7;border-radius:50%;}
+.hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(2em,5.5vw,3.8em);font-weight:900;color:#fff;line-height:1.12;letter-spacing:-1px;margin-bottom:20px;max-width:740px;}
+.hero h1 em{font-style:normal;color:#0097A7;display:block;}
+.hero-sub{color:rgba(255,255,255,0.82);font-size:1.1em;max-width:540px;margin-bottom:30px;line-height:1.7;}
+.hero-rating{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.85);font-size:0.9em;margin-bottom:34px;}
+.hero-rating .stars{color:#FBBC04;font-size:1.2em;letter-spacing:2px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{background:#0097A7;color:#fff;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1em;padding:16px 32px;border-radius:8px;transition:all .2s;display:inline-flex;align-items:center;gap:10px;}
+.btn-primary:hover{background:#00838F;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.25);}
+.btn-outline{background:transparent;color:#fff;font-weight:700;font-size:1em;padding:16px 32px;border-radius:8px;border:2px solid rgba(255,255,255,0.5);transition:all .2s;display:inline-flex;align-items:center;gap:10px;}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,0.08);}
+.trust{background:#f8f9fa;border-bottom:1px solid #e5e7eb;padding:20px 0;}
+.trust-items{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:10px;padding:10px 32px;font-size:0.87em;font-weight:600;color:#333;border-right:1px solid #ddd;}
+.trust-item:last-child{border-right:none;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+.services{padding:90px 0;background:#fff;}
+.section-label{font-size:0.75em;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#0097A7;margin-bottom:10px;}
+h2{font-family:'Montserrat',sans-serif;font-size:clamp(1.7em,3.5vw,2.5em);font-weight:900;color:#0A3D62;margin-bottom:14px;letter-spacing:-0.5px;}
+.section-sub{color:#6b7280;font-size:1.05em;max-width:520px;margin-bottom:52px;}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;}
+.svc-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:30px 26px;transition:all .25s;}
+.svc-card:hover{border-color:#0097A7;box-shadow:0 8px 32px rgba(0,0,0,0.09);transform:translateY(-3px);}
+.svc-icon{width:56px;height:56px;background:#E8F6F8;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+.svc-card h3{font-family:'Montserrat',sans-serif;font-size:1.02em;font-weight:800;color:#0A3D62;margin-bottom:9px;}
+.svc-card p{font-size:0.88em;color:#6b7280;line-height:1.65;}
+.stats{background:#0A3D62;padding:68px 0;}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:36px;text-align:center;}
+.stat-num{font-family:'Montserrat',sans-serif;font-size:2.8em;font-weight:900;color:#0097A7;line-height:1;margin-bottom:8px;}
+.stat-lbl{font-size:0.85em;color:rgba(255,255,255,0.7);font-weight:500;}
+.about{padding:90px 0;background:#E8F6F8;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
+.about-img{border-radius:16px;overflow:hidden;height:400px;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80&fit=crop');background-size:cover;background-position:center;}
+.about-badge{display:inline-block;background:#0097A7;color:#fff;font-size:0.77em;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:6px 14px;border-radius:5px;margin-bottom:16px;}
+.about p{color:#4b5563;line-height:1.8;font-size:0.96em;margin-bottom:16px;}
+.about-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:8px;}
+.about-list li{display:flex;align-items:center;gap:10px;font-size:0.9em;font-weight:600;color:#0A3D62;}
+.about-list li::before{content:'✓';background:#0097A7;color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.74em;font-weight:800;flex-shrink:0;}
+.reviews{padding:90px 0;background:#fff;}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:46px;}
+.review-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:26px;box-shadow:0 2px 12px rgba(0,0,0,.05);}
+.rev-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.rev-avatar{width:42px;height:42px;border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1em;flex-shrink:0;}
+.rev-meta strong{display:block;font-size:0.93em;color:#111;}
+.rev-stars{font-size:0.95em;margin-top:2px;}
+.google-logo{margin-left:auto;opacity:0.7;}
+.rev-text{color:#4b5563;font-size:0.88em;line-height:1.7;}
+.faq{padding:90px 0;background:#E8F6F8;}
+.faq-grid{max-width:780px;margin-top:46px;display:flex;flex-direction:column;gap:12px;}
+.faq-item{background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;cursor:pointer;font-weight:700;font-size:0.95em;color:#0A3D62;gap:16px;}
+.faq-a{padding:0 24px 20px;color:#4b5563;font-size:0.9em;line-height:1.7;}
+.cta-band{background:#0A3D62;padding:90px 0;text-align:center;}
+.cta-band h2{color:#fff;margin-bottom:14px;}
+.cta-band p{color:rgba(255,255,255,0.75);font-size:1.1em;max-width:460px;margin:0 auto 38px;}
+.cta-phone{display:block;font-family:'Montserrat',sans-serif;font-size:clamp(1.9em,5vw,3em);font-weight:900;color:#0097A7;margin-bottom:30px;letter-spacing:-1px;}
+.cta-band .hero-actions{justify-content:center;}
+.footer{background:#0d0d1a;color:#94a3b8;padding:60px 0 24px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:44px;}
+.footer-logo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.15em;color:#f1f5f9;margin-bottom:14px;}
+.footer-desc{font-size:0.85em;line-height:1.7;max-width:280px;}
+.footer-contact{margin-top:18px;display:flex;flex-direction:column;gap:7px;font-size:0.85em;}
+.footer-col h4{color:#e2e8f0;font-size:0.8em;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.footer-col ul li a{font-size:0.85em;color:#94a3b8;transition:color .2s;}
+.footer-col ul li a:hover{color:#e2e8f0;}
+.footer-bottom{border-top:1px solid #1e293b;padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:0.81em;}
+.footer-badge{background:#1e293b;color:#94a3b8;padding:4px 14px;border-radius:5px;font-size:0.8em;}
+@media(max-width:900px){.nav-links{display:none;}.about-grid{grid-template-columns:1fr;}.about-img{height:240px;}.footer-grid{grid-template-columns:1fr 1fr;}.trust-item{border-right:none;}}
+@media(max-width:600px){.hero{min-height:auto;}.footer-grid{grid-template-columns:1fr;}.stats-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+    <span>📍 81 Pike St, Seattle, WA 98101, USA</span>
+    <span>Mon–Fri 7am–7pm &nbsp;·&nbsp; Sat–Sun Available &nbsp;·&nbsp; <a href="tel:(206) 360-0078">(206) 360-0078</a></span>
+</div></div>
+
+<nav class="nav"><div class="wrap">
+    <div class="logo"><div class="logo-dot"></div>Puget Seattle Plumbers and Drain Cleaning Co.</div>
+    <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="https://link.agency-vault.com/widget/bookings/apex8aidiscoverycall" class="nav-btn">Free Estimate →</a>
+</div></nav>
+
+<section class="hero">
+    <div class="hero-bg"></div><div class="hero-overlay"></div>
+    <div class="hero-content wrap">
+        <div class="hero-eyebrow">Licensed Master Plumber</div>
+        <h1>Puget Seattle Plumbers and Drain Cleaning Co. —<em>Fast, Reliable Plumbing.</em></h1>
+        <p class="hero-sub">Leaks, clogs, water heaters, full repiping — Puget Seattle Plumbers and Drain Cleaning Co. fixes it right and fixes it fast in Seattle.</p>
+        <div class="hero-rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.8/5 from 31 Google Reviews</span>
+        </div>
+        <div class="hero-actions">
+            <a href="tel:(206) 360-0078" class="btn-primary">
+                <svg viewBox="0 0 24 24" width="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                Call a Master Plumber: (206) 360-0078
+            </a>
+            <a href="https://link.agency-vault.com/widget/bookings/apex8aidiscoverycall" class="btn-outline">
+                <svg viewBox="0 0 24 24" width="18" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+                Request a Plumber Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="trust"><div class="wrap"><div class="trust-items">
+    <div class="trust-item"><svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>Licensed & Fully Insured</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>Same-Day Service Available</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>Top Rated on Google</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L21 8l-9 9z"/></svg>100% Satisfaction Guarantee</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H7v-2h8v2zm3-4H7v-2h11v2zm0-4H7V8h11v2z"/></svg>Upfront Flat-Rate Pricing</div>
+</div></div></div>
+
+<section class="services" id="services"><div class="wrap">
+    <div class="section-label">What We Do</div>
+    <h2>Plumbing Services</h2>
+    <p class="section-sub">Comprehensive plumbing services for homeowners and businesses in Seattle — done right, on time, and on budget.</p>
+    <div class="svc-grid">
+        <div class="svc-card">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="#0097A7"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></div>
+            <h3>Leak Detection & Repair</h3>
+            <p>Hidden leaks cause massive damage. We locate and repair leaks fast — under slabs, in walls, or outdoors.</p>
+        </div>
+        <div class="svc-card">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="#0097A7"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg></div>
+            <h3>Drain Cleaning & Rooter</h3>
+            <p>Slow drains or full blockages cleared fast with professional hydro-jetting and rooter equipment.</p>
+        </div>
+        <div class="svc-card">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="#0097A7"><path d="M17 8C8 10 5.9 16.17 3.82 19.57 3.35 20.31 2 19.9 2 19.18V3h2v5h2V3h2v5h2V3h2v16.18c0 .72-1.35 1.13-1.82.39z"/></svg></div>
+            <h3>Water Heater Install & Repair</h3>
+            <p>Traditional, tankless, or hybrid — we install, repair, and replace all water heater types with same-day service.</p>
+        </div>
+        <div class="svc-card">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="#0097A7"><path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/></svg></div>
+            <h3>Full Repipe Services</h3>
+            <p>Galvanized, polybutylene, or old copper failing? We repipe your whole home in 1-2 days with minimal disruption.</p>
+        </div>
+        <div class="svc-card">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="#0097A7"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg></div>
+            <h3>Toilet & Faucet Repair</h3>
+            <p>Running toilets, dripping faucets, or full fixture replacements — small jobs done right with no trip fees.</p>
+        </div>
+        <div class="svc-card">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="#0097A7"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+            <h3>24/7 Emergency Plumbing</h3>
+            <p>Burst pipes, sewage backup, or flooding — our emergency plumbers are on call around the clock.</p>
+        </div></div>
+</div></section>
+
+<section class="stats"><div class="wrap"><div class="stats-grid"><div class="stat"><div class="stat-num">1,700+</div><div class="stat-lbl">Plumbing Jobs Completed</div></div><div class="stat"><div class="stat-num">16+</div><div class="stat-lbl">Years Serving Seattle</div></div><div class="stat"><div class="stat-num">60 Min</div><div class="stat-lbl">Emergency Response</div></div><div class="stat"><div class="stat-num">4.8★</div><div class="stat-lbl">Google Rating</div></div></div></div></section>
+
+<section class="about" id="about"><div class="wrap"><div class="about-grid">
+    <div class="about-img"></div>
+    <div>
+        <div class="about-badge">About Puget Seattle Plumbers and Drain Cleaning Co.</div>
+        <h2>Who We Are</h2>
+        <p>Puget Seattle Plumbers and Drain Cleaning Co. has been serving in Seattle homeowners and businesses for over 16 years. Our master plumbers are licensed, background-checked, and trained to handle anything from a leaky faucet to a full whole-home repipe. We treat your home like it's our own — clean boots, drop cloths, and a thorough cleanup when we're done.</p>
+        <ul class="about-list">
+            <li>Locally owned &amp; operated in Seattle</li>
+            <li>Background-checked, uniformed technicians</li>
+            <li>No hidden fees — written estimates upfront</li>
+            <li>Fully licensed &amp; insured</li>
+        </ul>
+    </div>
+</div></div></section>
+
+
+    <section class="reviews" id="reviews">
+        <div class="wrap">
+            <div class="section-label">Customer Reviews</div>
+            <h2>What Our Customers Say</h2>
+            <p class="section-sub">Real reviews from real customers in Seattle. We let our work — and our clients — speak for themselves.</p>
+            <div class="reviews-grid">
+            <div class="review-card">
+                <div class="rev-header">
+                    <div class="rev-avatar" style="background:#0A3D62;">M</div>
+                    <div class="rev-meta">
+                        <strong>Michael Thomas</strong>
+                        <div class="rev-stars"><span style="color:#FBBC04;">★★★★★</span><span style="color:#ddd;"></span></div>
+                    </div>
+                    <div class="google-logo"><svg viewBox="0 0 24 24" width="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div>
+                </div>
+                <p class="rev-text">"The bathroom faucet wouldn’t shut off fully and kept dripping. I reached out to their team for support. They examined the handle assembly and found worn internal parts. After replacing them, the faucet closed tightly. Really satisfied with the neat repair."</p>
+            </div>
+            <div class="review-card">
+                <div class="rev-header">
+                    <div class="rev-avatar" style="background:#0A3D62;">J</div>
+                    <div class="rev-meta">
+                        <strong>Jeffery Watts</strong>
+                        <div class="rev-stars"><span style="color:#FBBC04;">★★★★★</span><span style="color:#ddd;"></span></div>
+                    </div>
+                    <div class="google-logo"><svg viewBox="0 0 24 24" width="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div>
+                </div>
+                <p class="rev-text">"A toilet kept refilling on its own throughout the day. The internal components were replaced and adjusted carefully. No unnecessary parts were added. The issue stopped immediately after the service."</p>
+            </div>
+            <div class="review-card">
+                <div class="rev-header">
+                    <div class="rev-avatar" style="background:#0A3D62;">K</div>
+                    <div class="rev-meta">
+                        <strong>Karina Kale</strong>
+                        <div class="rev-stars"><span style="color:#FBBC04;">★★★★★</span><span style="color:#ddd;"></span></div>
+                    </div>
+                    <div class="google-logo"><svg viewBox="0 0 24 24" width="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></div>
+                </div>
+                <p class="rev-text">"The bathroom sink was leaking underneath. I reached out for plumbing support. They replaced the damaged pipe section. The leak was fixed quickly and neatly. I’m happy with their service."</p>
+            </div></div>
+        </div>
+    </section>
+
+<section class="faq" id="faq"><div class="wrap">
+    <div class="section-label">Common Questions</div>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-q"><span>How fast can you get here?</span>
+                <svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg></div>
+                <div class="faq-a">Most calls get a same-day appointment. Emergency calls are typically on-site within 60–90 minutes.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q"><span>Do you charge for estimates?</span>
+                <svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg></div>
+                <div class="faq-a">No. We give free, upfront written estimates before any work starts.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q"><span>Are your plumbers licensed?</span>
+                <svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg></div>
+                <div class="faq-a">Yes — all our plumbers are state-licensed master or journeyman plumbers, fully insured.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q"><span>Do you work on weekends?</span>
+                <svg viewBox="0 0 24 24" width="20" fill="#0097A7"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg></div>
+                <div class="faq-a">Yes, we're available 7 days a week. Emergency service is available 24/7 including holidays.</div>
+            </div></div>
+</div></section>
+
+<section class="cta-band" id="contact"><div class="wrap">
+    <h2>Ready to Schedule Service?</h2>
+    <p>Call us now or book a free estimate online. We respond fast — most calls answered in minutes in Seattle.</p>
+    <a href="tel:(206) 360-0078" class="cta-phone">(206) 360-0078</a>
+    <div class="hero-actions">
+        <a href="tel:(206) 360-0078" class="btn-primary">
+            <svg viewBox="0 0 24 24" width="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call Us Now
+        </a>
+        <a href="https://link.agency-vault.com/widget/bookings/apex8aidiscoverycall" class="btn-outline">
+            <svg viewBox="0 0 24 24" width="18" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+            Book a Free Estimate Online
+        </a>
+    </div>
+</div></section>
+
+<footer class="footer"><div class="wrap">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-logo">Puget Seattle Plumbers and Drain Cleaning Co.</div>
+            <p class="footer-desc">Locally owned and operated. Serving homeowners and businesses with professional plumbing services in Seattle. Licensed, insured, and committed to quality on every job.</p>
+            <div class="footer-contact">
+                <span>📍 81 Pike St, Seattle, WA 98101, USA</span>
+                <span>📞 <a href="tel:(206) 360-0078" style="color:#94a3b8;">(206) 360-0078</a></span>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul><li><a href="#services">Leak Detection & Repair</a></li><li><a href="#services">Drain Cleaning & Rooter</a></li><li><a href="#services">Water Heater Install & Repair</a></li><li><a href="#services">Full Repipe Services</a></li><li><a href="#services">Toilet & Faucet Repair</a></li></ul>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+                <li><a href="tel:(206) 360-0078">Call Us Now</a></li>
+                <li><a href="https://link.agency-vault.com/widget/bookings/apex8aidiscoverycall">Book Online</a></li>
+                <li><a href="#contact">Free Estimate</a></li>
+                <li><a href="tel:(206) 360-0078">Emergency Service</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Puget Seattle Plumbers and Drain Cleaning Co.. All rights reserved.</span>
+        <div class="footer-badge">Licensed Master Plumber</div>
+    </div>
+</div></footer>
+</body></html>
